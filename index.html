@@ -88,7 +88,7 @@
                         >
                         <a
                             href="#contact"
-                            class="bg-brand-purple text-white px-6 py-2.5 rounded-full font-medium hover:bg-opacity-90 transition-all shadow-lg shadow-brand-purple/30"
+                            class="bg-brand-purple text-white px-6 py-2.5 rounded-full font-medium hover:bg-purple-800 transition-all shadow-lg"
                             >Let's Talk</a
                         >
                     </div>
@@ -148,51 +148,62 @@
                 class="absolute inset-0 bg-brand-light -z-20 transform skew-y-3 origin-top-left scale-110"
             ></div>
 
-            <div
-                class="absolute inset-0 flex items-center justify-center -z-10 pointer-events-none select-none opacity-[0.04] overflow-hidden"
-            >
-                <h2
-                    id="bg-typing-text"
-                    class="text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] font-black text-brand-purple whitespace-nowrap cursor-blink tracking-tighter"
-                ></h2>
-            </div>
-
-            <div
-                class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center flex flex-col items-center"
-            >
-                <div data-aos="fade-up">
-                    <h1
-                        class="text-5xl lg:text-7xl font-extrabold tracking-tight leading-[1.1] mb-6"
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div
+                    class="flex flex-col md:flex-row items-center md:items-start justify-between gap-8 md:gap-4 mb-12 lg:mb-16"
+                >
+                    <div
+                        class="w-full md:w-[55%] text-left"
+                        data-aos="fade-right"
                     >
-                        We build digital
-                        <span
-                            class="text-transparent bg-clip-text bg-gradient-to-r from-brand-purple to-purple-400"
-                            >experiences</span
+                        <h1
+                            class="text-5xl lg:text-7xl font-extrabold tracking-tight leading-[1.1] text-brand-dark text-left"
                         >
-                        that perform.
-                    </h1>
+                            We build digital <br />
+                            <span
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-brand-purple to-purple-400"
+                                >experiences</span
+                            >
+                            that <br />
+                            perform.
+                        </h1>
+                    </div>
+
+                    <div
+                        class="w-full md:w-[45%] flex justify-start md:justify-center md:pt-4 min-h-[4rem]"
+                        data-aos="fade-left"
+                    >
+                        <h2
+                            id="horizontal-typing-text"
+                            class="text-6xl lg:text-8xl font-extrabold text-brand-purple cursor-blink tracking-tight"
+                        ></h2>
+                    </div>
+                </div>
+
+                <div
+                    class="max-w-4xl mx-auto text-center"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                >
                     <p
-                        class="text-lg lg:text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto"
-                        data-aos="fade-up"
-                        data-aos-delay="100"
+                        class="text-lg lg:text-xl text-gray-600 mb-10 leading-relaxed font-medium"
                     >
                         From scalable web applications to intuitive mobile
                         designs, we engineer solutions that solve real problems
                         and drive your business forward.
                     </p>
                     <div
-                        class="flex flex-col sm:flex-row justify-center gap-4"
-                        data-aos="fade-up"
-                        data-aos-delay="200"
+                        class="flex flex-col sm:flex-row justify-center items-center gap-4"
                     >
                         <a
                             href="#contact"
-                            class="bg-brand-dark text-white px-8 py-4 rounded-full font-medium text-center hover:bg-gray-800 transition-all"
-                            >Work With Us</a
+                            class="bg-brand-purple text-white px-8 py-4 rounded-full font-medium hover:bg-purple-800 transition-all w-full sm:w-auto"
                         >
+                            Work With Us
+                        </a>
                         <a
                             href="#work"
-                            class="px-8 py-4 rounded-full font-medium text-center border border-gray-200 hover:border-brand-purple hover:text-brand-purple transition-all flex items-center justify-center gap-2"
+                            class="px-8 py-4 rounded-full font-medium border border-gray-200 hover:border-gray-300 text-brand-dark transition-all flex items-center justify-center gap-2 w-full sm:w-auto"
                         >
                             View Our Work
                             <svg
@@ -205,7 +216,7 @@
                                     stroke-linecap="round"
                                     stroke-linejoin="round"
                                     stroke-width="2"
-                                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3"
                                 ></path>
                             </svg>
                         </a>
@@ -527,7 +538,7 @@
                             ></a>
                         </div>
                         <div
-                            class="order-1 lg:order-2 w-full h-[300px] md:h-[450px] lg:h-[600px]"
+                            class="order-1 lg:order-2 w-full h-[400px] lg:h-[480px]"
                             data-aos="fade-left"
                         >
                             <img
@@ -542,13 +553,13 @@
                         class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
                     >
                         <div
-                            class="w-full h-[300px] md:h-[450px] lg:h-[600px]"
+                            class="w-full h-[400px] lg:h-[480px]"
                             data-aos="fade-right"
                         >
                             <img
                                 src="qhss.png"
                                 alt="Inventory and Borrowing System"
-                                class="rounded-2xl w-full h-full object-cover object-top"
+                                class="rounded-2xl w-full h-full object-cover"
                             />
                         </div>
                         <div data-aos="fade-left">
@@ -888,10 +899,12 @@
                 });
             });
 
-            // Typing Effect Logic (Word by Word Alternating)
+            // Typing Effect Logic
             document.addEventListener("DOMContentLoaded", () => {
                 const words = ["Innovate.", "Integrate.", "Elevate."];
-                const typingTarget = document.getElementById("bg-typing-text");
+                const typingTarget = document.getElementById(
+                    "horizontal-typing-text",
+                );
 
                 let wordIndex = 0;
                 let charIndex = 0;
@@ -901,14 +914,12 @@
                     const currentWord = words[wordIndex];
 
                     if (isDeleting) {
-                        // Deleting text
                         typingTarget.textContent = currentWord.substring(
                             0,
                             charIndex - 1,
                         );
                         charIndex--;
                     } else {
-                        // Typing text
                         typingTarget.textContent = currentWord.substring(
                             0,
                             charIndex + 1,
@@ -917,24 +928,20 @@
                     }
 
                     // Dynamic typing speed
-                    let typeSpeed = isDeleting ? 75 : 150;
+                    let typeSpeed = isDeleting ? 60 : 120;
 
-                    // If word is completely typed out
                     if (!isDeleting && charIndex === currentWord.length) {
-                        typeSpeed = 2000; // Pause at the end of the word
+                        typeSpeed = 1500; // Pause at the end of the word
                         isDeleting = true;
-                    }
-                    // If word is completely deleted
-                    else if (isDeleting && charIndex === 0) {
+                    } else if (isDeleting && charIndex === 0) {
                         isDeleting = false;
-                        wordIndex = (wordIndex + 1) % words.length; // Move to next word
-                        typeSpeed = 500; // Pause before typing next word
+                        wordIndex = (wordIndex + 1) % words.length;
+                        typeSpeed = 400; // Pause before typing next word
                     }
 
                     setTimeout(typeEffect, typeSpeed);
                 }
 
-                // Start the typing effect
                 setTimeout(typeEffect, 800);
             });
         </script>
