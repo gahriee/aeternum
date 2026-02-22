@@ -1,0 +1,804 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Aeternum Solutions</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            brand: {
+                                purple: "#46226E",
+                                dark: "#111111",
+                                light: "#F8F9FA",
+                            },
+                        },
+                        fontFamily: {
+                            sans: ["Inter", "sans-serif"],
+                        },
+                    },
+                },
+            };
+        </script>
+    </head>
+    <body class="font-sans text-brand-dark bg-white antialiased">
+        <nav
+            class="fixed w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-100"
+            data-aos="fade-down"
+            data-aos-duration="500"
+        >
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-20">
+                    <div class="flex-shrink-0 flex items-center gap-3">
+                        <div class="w-10 h-10 flex items-center justify-center">
+                            <img
+                                src="logo.png"
+                                alt="Aeternum Logo"
+                                class="w-full h-full object-contain"
+                            />
+                        </div>
+                        <span class="font-bold text-xl tracking-tight"
+                            >Aeternum</span
+                        >
+                    </div>
+                    <div class="hidden md:flex space-x-8 items-center">
+                        <a
+                            href="#services"
+                            class="text-gray-600 hover:text-brand-purple transition-colors font-medium"
+                            >Services</a
+                        >
+                        <a
+                            href="#work"
+                            class="text-gray-600 hover:text-brand-purple transition-colors font-medium"
+                            >Work</a
+                        >
+                        <a
+                            href="#about"
+                            class="text-gray-600 hover:text-brand-purple transition-colors font-medium"
+                            >About</a
+                        >
+                        <a
+                            href="#contact"
+                            class="bg-brand-purple text-white px-6 py-2.5 rounded-full font-medium hover:bg-opacity-90 transition-all shadow-lg shadow-brand-purple/30"
+                            >Let's Talk</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden relative">
+            <div
+                class="absolute inset-0 bg-brand-light -z-10 transform skew-y-3 origin-top-left scale-110"
+            ></div>
+            <div
+                class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center flex flex-col items-center"
+            >
+                <div data-aos="fade-up">
+                    <h1
+                        class="text-5xl lg:text-7xl font-extrabold tracking-tight leading-[1.1] mb-6"
+                    >
+                        We build digital
+                        <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-brand-purple to-purple-400"
+                            >experiences</span
+                        >
+                        that perform.
+                    </h1>
+                    <p
+                        class="text-lg lg:text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                    >
+                        From scalable web applications to intuitive mobile
+                        designs, we engineer solutions that solve real problems
+                        and drive your business forward.
+                    </p>
+                    <div
+                        class="flex flex-col sm:flex-row justify-center gap-4"
+                        data-aos="fade-up"
+                        data-aos-delay="200"
+                    >
+                        <a
+                            href="#contact"
+                            class="bg-brand-dark text-white px-8 py-4 rounded-full font-medium text-center hover:bg-gray-800 transition-all"
+                            >Work With Us</a
+                        >
+                        <a
+                            href="#work"
+                            class="px-8 py-4 rounded-full font-medium text-center border border-gray-200 hover:border-brand-purple hover:text-brand-purple transition-all flex items-center justify-center gap-2"
+                        >
+                            View Our Work
+                            <svg
+                                class="w-4 h-4"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                                ></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-24 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div
+                    class="text-center max-w-3xl mx-auto mb-16"
+                    data-aos="fade-up"
+                >
+                    <h2
+                        class="text-brand-purple font-semibold tracking-wide uppercase text-sm mb-3"
+                    >
+                        What We Do
+                    </h2>
+                    <h3 class="text-3xl md:text-5xl font-bold mb-6">
+                        End-to-end digital solutions.
+                    </h3>
+                    <p class="text-gray-600 text-lg">
+                        We combine strategic thinking with technical excellence
+                        to deliver products that your users will love.
+                    </p>
+                </div>
+
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+                >
+                    <div
+                        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow border border-gray-100 group"
+                        data-aos="fade-up"
+                        data-aos-delay="0"
+                    >
+                        <div
+                            class="w-12 h-12 bg-brand-light rounded-lg flex items-center justify-center text-brand-purple mb-6 group-hover:bg-brand-purple group-hover:text-white transition-colors"
+                        >
+                            <svg
+                                class="w-6 h-6"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                                ></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">
+                            Web App Development
+                        </h4>
+                        <p class="text-gray-600">
+                            Robust, scalable, and secure full-stack applications
+                            built with modern frameworks.
+                        </p>
+                    </div>
+                    <div
+                        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow border border-gray-100 group"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                    >
+                        <div
+                            class="w-12 h-12 bg-brand-light rounded-lg flex items-center justify-center text-brand-purple mb-6 group-hover:bg-brand-purple group-hover:text-white transition-colors"
+                        >
+                            <svg
+                                class="w-6 h-6"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
+                                ></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">
+                            Mobile App Development
+                        </h4>
+                        <p class="text-gray-600">
+                            Native and cross-platform mobile experiences that
+                            perform flawlessly on iOS and Android.
+                        </p>
+                    </div>
+                    <div
+                        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow border border-gray-100 group"
+                        data-aos="fade-up"
+                        data-aos-delay="200"
+                    >
+                        <div
+                            class="w-12 h-12 bg-brand-light rounded-lg flex items-center justify-center text-brand-purple mb-6 group-hover:bg-brand-purple group-hover:text-white transition-colors"
+                        >
+                            <svg
+                                class="w-6 h-6"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                                ></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">
+                            Progressive Web Apps
+                        </h4>
+                        <p class="text-gray-600">
+                            App-like experiences directly in the browser with
+                            offline capabilities and push notifications.
+                        </p>
+                    </div>
+                    <div
+                        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow border border-gray-100 group"
+                        data-aos="fade-up"
+                        data-aos-delay="300"
+                    >
+                        <div
+                            class="w-12 h-12 bg-brand-light rounded-lg flex items-center justify-center text-brand-purple mb-6 group-hover:bg-brand-purple group-hover:text-white transition-colors"
+                        >
+                            <svg
+                                class="w-6 h-6"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+                                ></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">
+                            WordPress Development
+                        </h4>
+                        <p class="text-gray-600">
+                            Custom themes, plugins, and headless CMS
+                            architectures tailored to your content needs.
+                        </p>
+                    </div>
+                    <div
+                        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow border border-gray-100 group"
+                        data-aos="fade-up"
+                        data-aos-delay="400"
+                    >
+                        <div
+                            class="w-12 h-12 bg-brand-light rounded-lg flex items-center justify-center text-brand-purple mb-6 group-hover:bg-brand-purple group-hover:text-white transition-colors"
+                        >
+                            <svg
+                                class="w-6 h-6"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
+                                ></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">UI/UX Design</h4>
+                        <p class="text-gray-600">
+                            User-centric design systems that are beautiful,
+                            accessible, and conversion-optimized.
+                        </p>
+                    </div>
+                    <div
+                        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow border border-gray-100 group"
+                        data-aos="fade-up"
+                        data-aos-delay="500"
+                    >
+                        <div
+                            class="w-12 h-12 bg-brand-light rounded-lg flex items-center justify-center text-brand-purple mb-6 group-hover:bg-brand-purple group-hover:text-white transition-colors"
+                        >
+                            <svg
+                                class="w-6 h-6"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                                ></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">
+                            Prototyping & Consultation
+                        </h4>
+                        <p class="text-gray-600">
+                            Wireframing, interactive prototypes, and strategic
+                            guidance to validate ideas before coding.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div
+                    class="flex justify-between items-end mb-16"
+                    data-aos="fade-up"
+                >
+                    <div class="max-w-2xl">
+                        <h2
+                            class="text-brand-purple font-semibold tracking-wide uppercase text-sm mb-3"
+                        >
+                            Featured Work
+                        </h2>
+                        <h3 class="text-3xl md:text-5xl font-bold">
+                            Projects that drove real impact.
+                        </h3>
+                    </div>
+                    <div class="hidden md:block">
+                        <a
+                            href="#"
+                            class="text-brand-purple font-medium hover:text-brand-dark transition-colors flex items-center gap-2"
+                            >View all case studies
+                            <svg
+                                class="w-4 h-4"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                                ></path></svg
+                        ></a>
+                    </div>
+                </div>
+
+                <div class="space-y-24">
+                    <div
+                        class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+                    >
+                        <div class="order-2 lg:order-1" data-aos="fade-right">
+                            <div class="mb-4 flex gap-2">
+                                <span
+                                    class="px-3 py-1 bg-gray-100 rounded-full text-xs font-medium text-gray-600"
+                                    >Web App</span
+                                >
+                                <span
+                                    class="px-3 py-1 bg-gray-100 rounded-full text-xs font-medium text-gray-600"
+                                    >UI/UX</span
+                                >
+                            </div>
+                            <h4 class="text-3xl font-bold mb-4">Technomatch</h4>
+                            <div class="space-y-4 mb-8">
+                                <div>
+                                    <h5 class="font-semibold text-brand-dark">
+                                        The Problem:
+                                    </h5>
+                                    <p class="text-gray-600">
+                                        A disorganized ecosystem for connecting
+                                        competitive coders with real-time ranked
+                                        matches and structured tournaments.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold text-brand-dark">
+                                        The Solution:
+                                    </h5>
+                                    <p class="text-gray-600">
+                                        We architected a high-performance
+                                        full-stack web application with
+                                        real-time matchmaking, integrated
+                                        ranking algorithms, and a sleek user
+                                        dashboard.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h5
+                                        class="font-semibold text-brand-dark text-brand-purple"
+                                    >
+                                        The Outcome:
+                                    </h5>
+                                    <p class="text-gray-900 font-medium">
+                                        Increased user engagement by 150% and
+                                        successfully hosted tournaments for over
+                                        5,000 concurrent developers.
+                                    </p>
+                                </div>
+                            </div>
+                            <a
+                                href="#"
+                                class="font-medium hover:text-brand-purple transition-colors flex items-center gap-2"
+                                >Read full case study
+                                <svg
+                                    class="w-4 h-4"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M14 5l7 7m0 0l-7 7m7-7H3"
+                                    ></path></svg
+                            ></a>
+                        </div>
+                        <div
+                            class="order-1 lg:order-2 w-full h-[400px] lg:h-[480px]"
+                            data-aos="fade-left"
+                        >
+                            <img
+                                src="techno.png"
+                                alt="Technomatch project"
+                                class="rounded-2xl w-full h-full object-cover"
+                            />
+                        </div>
+                    </div>
+
+                    <div
+                        class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+                    >
+                        <div
+                            class="w-full h-[400px] lg:h-[480px]"
+                            data-aos="fade-right"
+                        >
+                            <img
+                                src="qhss.png"
+                                alt="Inventory and Borrowing System"
+                                class="rounded-2xl w-full h-full object-cover object-top"
+                            />
+                        </div>
+                        <div data-aos="fade-left">
+                            <div class="mb-4 flex gap-2">
+                                <span
+                                    class="px-3 py-1 bg-gray-100 rounded-full text-xs font-medium text-gray-600"
+                                    >Web App</span
+                                >
+                                <span
+                                    class="px-3 py-1 bg-gray-100 rounded-full text-xs font-medium text-gray-600"
+                                    >UI/UX</span
+                                >
+                            </div>
+                            <h4 class="text-3xl font-bold mb-4">
+                                Inventory and Borrowing System
+                            </h4>
+                            <div class="space-y-4 mb-8">
+                                <div>
+                                    <h5 class="font-semibold text-brand-dark">
+                                        The Problem:
+                                    </h5>
+                                    <p class="text-gray-600">
+                                        Manual tracking of equipment and
+                                        resources led to frequent losses,
+                                        double-bookings, and hours of
+                                        administrative overhead.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold text-brand-dark">
+                                        The Solution:
+                                    </h5>
+                                    <p class="text-gray-600">
+                                        We developed a centralized system with
+                                        barcode scanning, real-time availability
+                                        tracking, and automated reminder
+                                        notifications for overdue items.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h5
+                                        class="font-semibold text-brand-dark text-brand-purple"
+                                    >
+                                        The Outcome:
+                                    </h5>
+                                    <p class="text-gray-900 font-medium">
+                                        Reduced equipment loss by 95% and
+                                        decreased administrative processing time
+                                        by over 15 hours per week.
+                                    </p>
+                                </div>
+                            </div>
+                            <a
+                                href="#"
+                                class="font-medium hover:text-brand-purple transition-colors flex items-center gap-2"
+                                >Read full case study
+                                <svg
+                                    class="w-4 h-4"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M14 5l7 7m0 0l-7 7m7-7H3"
+                                    ></path></svg
+                            ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-24 bg-brand-light">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div
+                    class="text-center max-w-3xl mx-auto mb-16"
+                    data-aos="fade-up"
+                >
+                    <h2
+                        class="text-brand-purple font-semibold tracking-wide uppercase text-sm mb-3"
+                    >
+                        Our Process
+                    </h2>
+                    <h3 class="text-3xl md:text-5xl font-bold mb-6">
+                        How we bring your ideas to life.
+                    </h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div
+                        class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100"
+                        data-aos="fade-up"
+                        data-aos-delay="0"
+                    >
+                        <div
+                            class="w-12 h-12 bg-brand-purple text-white rounded-full flex items-center justify-center font-bold text-xl mb-6 shadow-md"
+                        >
+                            1
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">
+                            Discovery & Strategy
+                        </h4>
+                        <p class="text-gray-600">
+                            We start by deeply understanding your goals, your
+                            users, and your technical constraints to build a
+                            rock-solid foundation.
+                        </p>
+                    </div>
+                    <div
+                        class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                    >
+                        <div
+                            class="w-12 h-12 bg-brand-purple text-white rounded-full flex items-center justify-center font-bold text-xl mb-6 shadow-md"
+                        >
+                            2
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">
+                            Design & Development
+                        </h4>
+                        <p class="text-gray-600">
+                            Our team designs an intuitive experience, then
+                            writes clean, scalable, and secure code, keeping you
+                            in the loop at every milestone.
+                        </p>
+                    </div>
+                    <div
+                        class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100"
+                        data-aos="fade-up"
+                        data-aos-delay="200"
+                    >
+                        <div
+                            class="w-12 h-12 bg-brand-purple text-white rounded-full flex items-center justify-center font-bold text-xl mb-6 shadow-md"
+                        >
+                            3
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">
+                            Deployment & Support
+                        </h4>
+                        <p class="text-gray-600">
+                            We launch your project seamlessly to live servers
+                            and provide the ongoing maintenance required to
+                            ensure it stays fast and functional.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            id="contact"
+            class="py-24 bg-brand-dark text-white relative overflow-hidden"
+        >
+            <div
+                class="absolute top-0 right-0 w-96 h-96 bg-brand-purple rounded-full mix-blend-multiply filter blur-3xl opacity-50 transform translate-x-1/2 -translate-y-1/2"
+            ></div>
+            <div
+                class="absolute bottom-0 left-0 w-96 h-96 bg-purple-900 rounded-full mix-blend-multiply filter blur-3xl opacity-50 transform -translate-x-1/2 translate-y-1/2"
+            ></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                    <div data-aos="fade-right">
+                        <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                            Let's build something great together.
+                        </h2>
+                        <p class="text-gray-400 text-lg mb-8">
+                            Whether you need a full-stack web application, a
+                            mobile app, or product consultation, our team is
+                            ready to bring your vision to life.
+                        </p>
+
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4 text-gray-300">
+                                <svg
+                                    class="w-6 h-6 text-brand-purple"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                                    ></path>
+                                </svg>
+                                <span>aeternum@gmail.com</span>
+                            </div>
+                            <div class="flex items-center gap-4 text-gray-300">
+                                <svg
+                                    class="w-6 h-6 text-brand-purple"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                                    ></path>
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                                    ></path>
+                                </svg>
+                                <span>Antipolo City, Philippines</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white/5 p-8 rounded-2xl backdrop-blur-sm border border-white/10"
+                        data-aos="fade-left"
+                        data-aos-delay="200"
+                    >
+                        <form class="space-y-4">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label
+                                        class="block text-sm font-medium text-gray-300 mb-1"
+                                        >Name</label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-purple focus:ring-1 focus:ring-brand-purple transition-colors"
+                                        placeholder="John Doe"
+                                    />
+                                </div>
+                                <div>
+                                    <label
+                                        class="block text-sm font-medium text-gray-300 mb-1"
+                                        >Company</label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-purple focus:ring-1 focus:ring-brand-purple transition-colors"
+                                        placeholder="Acme Inc"
+                                    />
+                                </div>
+                            </div>
+                            <div>
+                                <label
+                                    class="block text-sm font-medium text-gray-300 mb-1"
+                                    >Email</label
+                                >
+                                <input
+                                    type="email"
+                                    class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-purple focus:ring-1 focus:ring-brand-purple transition-colors"
+                                    placeholder="john@example.com"
+                                />
+                            </div>
+                            <div>
+                                <label
+                                    class="block text-sm font-medium text-gray-300 mb-1"
+                                    >Project Brief</label
+                                >
+                                <textarea
+                                    rows="4"
+                                    class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-purple focus:ring-1 focus:ring-brand-purple transition-colors"
+                                    placeholder="Tell us what you're looking for..."
+                                ></textarea>
+                            </div>
+                            <button
+                                type="submit"
+                                class="w-full bg-brand-purple text-white font-bold py-4 rounded-lg hover:bg-opacity-90 transition-colors mt-4"
+                            >
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer
+            class="bg-brand-dark text-gray-400 py-12 border-t border-white/10"
+        >
+            <div
+                class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6"
+            >
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 items-center justify-center rounded">
+                        <img
+                            src="logo-footer.png"
+                            alt="Aeternum Logo"
+                            class="w-full h-full object-contain"
+                        />
+                    </div>
+                    <span class="text-white font-bold tracking-tight"
+                        >Aeternum</span
+                    >
+                </div>
+
+                <div class="flex gap-6 text-sm">
+                    <a href="#" class="hover:text-white transition-colors"
+                        >Privacy Policy</a
+                    >
+                    <a href="#" class="hover:text-white transition-colors"
+                        >Terms of Service</a
+                    >
+                </div>
+
+                <p class="text-sm">© 2026 Aeternum. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            // Initialize Animation on Scroll
+            AOS.init({
+                duration: 800, // Animation duration
+                once: true, // Whether animation should happen only once - while scrolling down
+                offset: 100, // Offset (in px) from the original trigger point
+                easing: "ease-in-out",
+            });
+        </script>
+    </body>
+</html>
