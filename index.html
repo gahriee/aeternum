@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth" style="font-size: 150%">
+<html lang="en" class="scroll-smooth overflow-x-hidden">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -36,6 +36,21 @@
             };
         </script>
         <style>
+            /* Responsive Root Font Size */
+            html {
+                font-size: 100%;
+            }
+            @media (min-width: 768px) {
+                html {
+                    font-size: 120%; /* Tablet (Tailwind 'md') */
+                }
+            }
+            @media (min-width: 1024px) {
+                html {
+                    font-size: 150%; /* Desktop (Tailwind 'lg') */
+                }
+            }
+
             /* Blinking cursor effect for the typing text */
             .cursor-blink::after {
                 content: "|";
@@ -49,7 +64,9 @@
             }
         </style>
     </head>
-    <body class="font-sans text-brand-dark bg-white antialiased">
+    <body
+        class="font-sans text-brand-dark bg-white antialiased overflow-x-hidden w-full relative"
+    >
         <nav
             class="fixed w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-100"
             data-aos="fade-down"
@@ -157,7 +174,7 @@
                         data-aos="fade-right"
                     >
                         <h1
-                            class="text-5xl lg:text-7xl font-extrabold tracking-tight leading-[1.1] text-brand-dark text-left"
+                            class="text-5xl lg:text-7xl font-extrabold tracking-tight leading-[1.1] text-brand-dark text-left break-words"
                         >
                             We build digital <br />
                             <span
@@ -225,7 +242,7 @@
             </div>
         </section>
 
-        <section id="services" class="py-24 bg-gray-50">
+        <section id="services" class="py-24 bg-gray-50 overflow-hidden">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div
                     class="text-center max-w-3xl mx-auto mb-16"
@@ -249,7 +266,7 @@
                     class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
                 >
                     <div
-                        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow border border-gray-100 group"
+                        class="bg-white p-6 md:p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow border border-gray-100 group break-words"
                         data-aos="fade-up"
                         data-aos-delay="0"
                     >
@@ -279,7 +296,7 @@
                         </p>
                     </div>
                     <div
-                        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow border border-gray-100 group"
+                        class="bg-white p-6 md:p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow border border-gray-100 group break-words"
                         data-aos="fade-up"
                         data-aos-delay="100"
                     >
@@ -309,7 +326,7 @@
                         </p>
                     </div>
                     <div
-                        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow border border-gray-100 group"
+                        class="bg-white p-6 md:p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow border border-gray-100 group break-words"
                         data-aos="fade-up"
                         data-aos-delay="200"
                     >
@@ -339,7 +356,7 @@
                         </p>
                     </div>
                     <div
-                        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow border border-gray-100 group"
+                        class="bg-white p-6 md:p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow border border-gray-100 group break-words"
                         data-aos="fade-up"
                         data-aos-delay="300"
                     >
@@ -369,7 +386,7 @@
                         </p>
                     </div>
                     <div
-                        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow border border-gray-100 group"
+                        class="bg-white p-6 md:p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow border border-gray-100 group break-words"
                         data-aos="fade-up"
                         data-aos-delay="400"
                     >
@@ -397,7 +414,7 @@
                         </p>
                     </div>
                     <div
-                        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow border border-gray-100 group"
+                        class="bg-white p-6 md:p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow border border-gray-100 group break-words"
                         data-aos="fade-up"
                         data-aos-delay="500"
                     >
@@ -430,7 +447,7 @@
             </div>
         </section>
 
-        <section id="work" class="py-24 bg-white">
+        <section id="work" class="py-24 bg-white overflow-hidden">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div
                     class="flex justify-between items-end mb-16"
@@ -482,7 +499,9 @@
                                     >UI/UX</span
                                 >
                             </div>
-                            <h4 class="text-3xl font-bold mb-4">Technomatch</h4>
+                            <h4 class="text-3xl font-bold mb-4 break-words">
+                                Technomatch
+                            </h4>
                             <div class="space-y-4 mb-8">
                                 <div>
                                     <h5 class="font-semibold text-brand-dark">
@@ -573,7 +592,7 @@
                                     >UI/UX</span
                                 >
                             </div>
-                            <h4 class="text-3xl font-bold mb-4">
+                            <h4 class="text-3xl font-bold mb-4 break-words">
                                 Inventory and Borrowing System
                             </h4>
                             <div class="space-y-4 mb-8">
@@ -635,7 +654,7 @@
             </div>
         </section>
 
-        <section id="about" class="py-24 bg-brand-light">
+        <section id="about" class="py-24 bg-brand-light overflow-hidden">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div
                     class="text-center max-w-3xl mx-auto mb-16"
@@ -652,7 +671,7 @@
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div
-                        class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100"
+                        class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100"
                         data-aos="fade-up"
                         data-aos-delay="0"
                     >
@@ -671,7 +690,7 @@
                         </p>
                     </div>
                     <div
-                        class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100"
+                        class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100"
                         data-aos="fade-up"
                         data-aos-delay="100"
                     >
@@ -690,7 +709,7 @@
                         </p>
                     </div>
                     <div
-                        class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100"
+                        class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100"
                         data-aos="fade-up"
                         data-aos-delay="200"
                     >
@@ -750,7 +769,9 @@
                                         d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                                     ></path>
                                 </svg>
-                                <span>aeternumsolution@gmail.com</span>
+                                <span class="break-all"
+                                    >aeternumsolution@gmail.com</span
+                                >
                             </div>
                             <div class="flex items-center gap-4 text-gray-300">
                                 <svg
